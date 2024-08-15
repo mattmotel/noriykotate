@@ -1,21 +1,35 @@
-const files = ['content/file1.md', 'content/file2.md'];
-
+// List of post files
+const posts = [
+    '_posts/2024-08-15-test.markdown',
+    '_posts/test2.markdown'
+];
+ 
+// Function to load the content of a Markdown file and display it in the overlay
 function loadMarkdownFile(file) {
     fetch(file)
         .then(response => response.text())
         .then(text => {
-            document.getElementById('content').innerHTML = marked.parse(text);
+            // Split front matter from the content
+            const content = text.split('---')[2];
+            document.getElementById('overlay-content').innerHTML = marked.parse(content);
+            document.getElementById('overlay').classList.remove('hidden');
         });
 }
 
+// Function to load the titles and dates from the front matter
 function loadTitles() {
     const titlesContainer = document.getElementById('titles');
-    files.forEach(file => {
+    posts.forEach(file => {
         fetch(file)
             .then(response => response.text())
             .then(text => {
-                // Extract title from the first line of the Markdown file (assuming it's a header)
-                const title = text.split('\n')[0].replace(/^#\s*/, ''); // Removes the leading "# " from Markdown header
+                // Split the front matter
+                const frontMatter = text.split('---')[1];
+
+                // Extract title and date from front matter
+                const title = frontMatter.match(/title:\s*(.*)/)[1].trim();
+
+                // Create a title element
                 const titleElement = document.createElement('h2');
                 titleElement.textContent = title;
                 titleElement.style.cursor = 'pointer';
@@ -24,6 +38,11 @@ function loadTitles() {
             });
     });
 }
+
+// Close overlay functionality
+document.getElementById('close-overlay').addEventListener('click', function() {
+    document.getElementById('overlay').classList.add('hidden');
+});
 
 // Initial load of titles
 loadTitles();

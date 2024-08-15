@@ -14,6 +14,15 @@
         <section id="titles"></section> <!-- Section to list the titles -->
         <article id="content"></article> <!-- Section to display Markdown content -->
     </main>
+
+    <!-- Overlay for displaying post content -->
+    <div id="overlay" class="hidden">
+        <div id="overlay-content"></div>
+        <button id="close-overlay">Close</button>
+    </div>
+
     <script src="js/main.js"></script>
+    <!-- Include the marked.js library for Markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </body>
 </html>
