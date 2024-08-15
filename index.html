@@ -9,45 +9,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="lg:bg-cover header-bg lg:bg-fixed">
-  <img src="assets/header.jpg" class="block lg:hidden"/>
+  <img src="assets/header.jpg" class="block lg:hidden fixed top-0 left-0 w-full h-[40vh] object-cover z-[-1]"/>
 
+  <header class="relative pt-[40vh] lg:pt-[53vh] w-full z-10">
+      <div class="lg:w-1/2 p-8 bg-white">
+          <h1 class="text-7xl lg:text-[124px] font-thin mb-4">Noriyko<br/>Tate</h1>
+          <p>
+              I transform <b>remote and hybrid workplaces</b> into thriving ecosystems of innovation, clarity, and open communication, catalyzing startup success through human-centric <b>people operations</b>.
+          </p>
+      </div>
+  </header>
 
-    <header class="lg:pt-[55vh]  w-full  ">
-        <div class="lg:w-1/2 p-8 bg-white">
-        <h1 class="text-7xl lg:text-[124px] font-thin mb-4">Noriyko<br/>Tate</h1>
-        <p>
-          I transform <b>remote and hybrid workplaces</b> into thriving ecosystems of innovation, clarity, and open communication, catalyzing startup success through human-centric <b>people operations</b>.
-
-</p>
-        </div>
-    </header>
     <main>
 
 
-      <div class="space-y-64 bg-white pt-48">
+      <div class="space-y-16 lg:space-y-64 bg-white pt-24 lg:pt-48">
 
 
       <div class="grid lg:grid-cols-2">
-        <div class="order-1">
+        <div class="order-2 lg:order-1">
         <img src="assets/philosophy.jpg" class=""/>
         </div>
-        <div class="order-2 p-8">
+        <div class="order-1 lg:order-2 p-8">
       <h2 class="text-3xl lg:text-5xl font-bold mb-12">perspective</h2>
       <p>Insights and strategies for building thriving remote and hybrid teams in today’s startup landscape</p>
-        <section id="titles"></section> <!-- Section to list the titles -->
+        <section id="titles" class="pt-4"></section> <!-- Section to list the titles -->
 
         </div>
       </div>
 
       <div class="grid lg:grid-cols-2">
-        <div class="order-1 lg:order-2">
+        <div class="order-2">
           <img src="assets/creative.jpg" class=""/>
         </div>
-        <div class="order-2 lg:order-1 p-8">
+        <div class="order-1 p-8">
         <h2 class="text-3xl lg:text-5xl font-bold mb-12">originality</h2>
         <p>Inspiring creativity in distributed teams to drive breakthrough solutions</p>
         <section id="links"></section> <!-- Section to list the titles -->
-        <div class="space-y-4 mt-4">
+        <div class="space-y-2 mt-4">
           <!-- Card 1 -->
           <div class="flex items-center p-4 border border-gray-300 rounded-lg">
             <img src="assets/ianj.png" alt="I Am Not Japanese" class="w-8 h-8 mr-4 rounded-md">
@@ -91,26 +90,26 @@
       </div>
 
       <div class="grid lg:grid-cols-2">
-      <div class="order-2 p-8">
+      <div class="order-1 lg:order-2 p-8">
         <h2 class="text-3xl lg:text-5xl font-bold mb-12">wisdom</h2>
         <p>Curated reads to fuel your professional journey and expand your leadership horizons</p>
         </div>
-        <div class="order-1 grid  grid-cols-3  lg:grid-cols-2 lg:grid-cols-4 gap-4 p-8">
-          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg"/>
-          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg"/>
-          <img src="assets/cover.jpg" class="bg-gray-100 p-4 rounded-lg"/>
-          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg"/>
-          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg"/>
-          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg"/>
-          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg"/>
-          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg"/>
+        <div class="order-2 lg:order-1 flex lg:grid lg:grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4 p-8 overflow-scroll">
+          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg w-1/2 lg:w-full"/>
+          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg w-1/2 lg:w-full"/>
+          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg w-1/2 lg:w-full"/>
+          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg w-1/2 lg:w-full"/>
+          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg w-1/2 lg:w-full"/>
+          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg w-1/2 lg:w-full"/>
+          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg w-1/2 lg:w-full"/>
+          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg w-1/2 lg:w-full"/>
         </div>
       </div>
 
       <div class="grid lg:grid-cols-2">
-        <div class="order-1 lg:order-2 p-8">
-          <p>Let's connect and explore how we can elevate your team's potential together</p>
-        <form action="https://submit-form.com/Og1dzKJGV" class="max-w-md space-y-6 mt-4">
+        <div class="order-2 p-8 bg-gray-100">
+
+        <form action="https://submit-form.com/Og1dzKJGV" class="space-y-6">
           <div>
             <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
             <input
@@ -142,14 +141,14 @@
               name="message"
               placeholder="Message"
               required
-              class="w-full border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none py-2"
+              class="w-full border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none py-2 lg:h-64"
             ></textarea>
           </div>
 
           <div>
             <button
               type="submit"
-              class="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+              class="bg-primary-blue hover:bg-black text-white py-2 px-4 rounded  focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
             >
               Send
             </button>
@@ -157,20 +156,24 @@
         </form>
 
         </div>
-        <div class="order-2 lg:order-1 p-8" id="contact">
-        <h2 class="text-3xl lg:text-5xl font-bold mb-12">connect</h2>
-      <p>  Sharing the story, vision, and values that drive my passion for transformative people operations</p>
-<p class="hidden">As a seasoned Head of People & Culture with a proven track record in scaling startups from seed to billion-dollar valuations, I specialize in architecting human-centric operations that drive innovation and foster elite team performance. My expertise lies in crafting transparent, creative, and highly communicative remote and hybrid work environments that not only attract and retain top talent but also cultivate a culture of continuous improvement and adaptability. By implementing strategic people operations and championing open communication, I transform distributed teams into cohesive, high-performing units capable of navigating the complex challenges of rapid growth and technological disruption.
-</p>
-<div class="space-y-2">
-    <a href="https://www.linkedin.com/in/noriykotate/" target="_blank" class="text-gray-700 hover:text-gray-500 underline font-semibold">
-        LinkedIn
-    </a>
-    <br>
-    <a href="https://noriykotate.medium.com" target="_blank" class="text-green-500 hover:text-green-700 underline font-semibold">
-        Medium
-    </a>
-</div>
+        <div class="order-1 p-8" id="contact">
+            <h2 class="text-3xl lg:text-5xl font-bold mb-12">connect</h2>
+            <div class="space-y-4">
+            <p>  Sharing the story, vision, and values that drive my passion for transformative people operations</p>
+
+            <p>As a seasoned Head of People & Culture with a proven track record in scaling startups from seed to billion-dollar valuations, I specialize in architecting human-centric operations that drive innovation and foster elite team performance. My expertise lies in crafting transparent, creative, and highly communicative remote and hybrid work environments that not only attract and retain top talent but also cultivate a culture of continuous improvement and adaptability. By implementing strategic people operations and championing open communication, I transform distributed teams into cohesive, high-performing units capable of navigating the complex challenges of rapid growth and technological disruption.
+            </p>
+            <p>Let's connect and explore how we can elevate your team's potential together</p>
+            </div>
+            <div class="space-y-2 pt-4">
+                <a href="https://www.linkedin.com/in/noriykotate/" target="_blank" class="text-gray-700 hover:text-gray-500 underline font-semibold">
+                    LinkedIn
+                </a>
+                <br>
+                <a href="https://noriykotate.medium.com" target="_blank" class="text-gray-700 hover:text-gray-500  underline font-semibold">
+                    Medium
+                </a>
+            </div>
 
 
         </div>

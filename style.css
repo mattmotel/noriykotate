@@ -8,8 +8,11 @@ body {
   background-image: url("assets/header.jpg");
 }
 
-h1, h2{
+h1, h2 {
   color: #3673A6;
+}
+.bg-primary-blue{
+  background-color: #3673A6;
 }
 
 /* Overlay Styles */

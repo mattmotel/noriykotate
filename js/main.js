@@ -35,17 +35,34 @@ function loadTitles() {
                 // Extract title and date from front matter
                 const title = frontMatter.match(/title:\s*(.*)/)[1].trim();
 
-                // Create a title element
+                // Create a container div for the image and title
+                const titleContainer = document.createElement('div');
+                titleContainer.classList.add('flex', 'items-center', 'py-2', 'cursor-pointer');
+
+                // Create the image element
+                const imgElement = document.createElement('img');
+                imgElement.src = 'assets/arrow-right.svg'; // Update with the correct path
+                imgElement.alt = 'Arrow Right';
+                imgElement.classList.add('w-6', 'h-6', 'mr-2');
+
+                // Create the title element as a link
                 const titleElement = document.createElement('a');
                 titleElement.textContent = title;
-                titleElement.classList.add('underline'); // Add class for styling
-                titleElement.classList.add('block'); // Add class for styling
+                titleElement.classList.add('underline', 'block');
 
+                // Set the onclick event for the title element
                 titleElement.onclick = () => loadMarkdownFile(file);
-                titlesContainer.appendChild(titleElement);
+
+                // Append the image and title to the container
+                titleContainer.appendChild(imgElement);
+                titleContainer.appendChild(titleElement);
+
+                // Append the container to the titles container
+                titlesContainer.appendChild(titleContainer);
             });
     });
 }
+
 
 // Close overlay functionality
 document.getElementById('close-overlay').addEventListener('click', function() {
