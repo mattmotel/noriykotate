@@ -1,5 +1,5 @@
 ---
-title: 'Building a Thriving Remote Work Culture: A Guide for Modern Teams'
+title: Remote Work
 date: 2024-08-15 13:05:00 Z
 ---
 
