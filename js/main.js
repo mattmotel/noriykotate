@@ -1,7 +1,7 @@
 // List of post files
 const posts = [
-    '_posts/2024-08-14-test.markdown',
-    '_posts/2024-08-15-building-a-thriving-remote-work-culture-a-guide-for-modern-teams.markdown',
+    'clarity.markdown',
+    'remote-work.markdown',
 ];
 
 // Function to load the content of a Markdown file and display it in the overlay
