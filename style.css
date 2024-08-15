@@ -7,14 +7,12 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     z-index: 1000;
 }
 
 #overlay-content {
-    background: #333;
+
     padding: 20px;
     max-width: 80%;
     max-height: 80%;
@@ -23,13 +21,13 @@
 
 #close-overlay {
     margin-top: 20px;
-    background: #f00;
+    display:block
     border: none;
     padding: 10px 20px;
     color: white;
     cursor: pointer;
 }
 
-.hidden {
+#overlay.hidden1 {
     display: none;
 }

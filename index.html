@@ -4,19 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Simple Site</h1>
+
+
+    <header class="lg:pt-64 bg-black w-full">
+        <div class="lg:w-1/2 p-8 bg-white">
+        <h1 class="text-7xl">Noriyko Tate</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consectetur commodo arcu sed porttitor. Cras vel tincidunt dui. Maecenas quis risus lectus. Proin pharetra lacus ac est congue mattis. Orci varius natoque penatibus et magni.</p>
+        </div>
     </header>
     <main>
+
+
+      <div class="space-y-64 mt-64">
+
+
+      <div class="grid lg:grid-cols-2">
+        <div class="order-1 bg-black"></div>
+        <div class="order-2 p-8">
+      <h2 class="text-3xl">philosophy</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consect.</p>
         <section id="titles"></section> <!-- Section to list the titles -->
-        <article id="content"></article> <!-- Section to display Markdown content -->
+
+        </div>
+      </div>
+
+      <div class="grid lg:grid-cols-2">
+        <div class="order-2 bg-black"></div>
+        <div class="order-1 p-8">
+        <h2 class="text-3xl">creativity</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consectetur commodo arcu sed porttitor. Cras vel tincidunt dui. Maecenas.</p>
+        <section id="links"></section> <!-- Section to list the titles -->
+        </div>
+      </div>
+
+      <div class="grid lg:grid-cols-2">
+        <div class="order-1 bg-black"></div>
+        <div class="order-2 p-8">
+        <h2 class="text-3xl">contact</h2>
+        <div>formspark</div>
+        <section id="links"></section> <!-- Section to list the titles -->
+        </div>
+      </div>
+
+
+        <div class="p-8">
+          <h2 class="text-3xl">library</h2>
+
+
+      </div>
+
+      </div>
+
+
+
+
+
     </main>
 
     <!-- Overlay for displaying post content -->
-    <div id="overlay" class="hidden">
+    <div id="overlay" class="hidden1">
         <div id="overlay-content"></div>
         <button id="close-overlay">Close</button>
     </div>
