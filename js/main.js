@@ -1,7 +1,13 @@
 // List of post files
 const posts = [
-    'clarity.markdown',
     'remote-work.markdown',
+    'clarity.markdown',
+    'talent.markdown',
+    'power-of-facilitation.markdown'
+    'open-communication.markdown',
+    'conscious-leadership.markdown',
+    'creativity-at-work.markdown',
+
 ];
 
 // Function to load the content of a Markdown file and display it in the overlay
