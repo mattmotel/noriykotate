@@ -5,27 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Site</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="lg:bg-cover header-bg lg:bg-fixed">
+  <img src="assets/header.jpg" class="block lg:hidden"/>
 
 
-    <header class="lg:pt-64 bg-black w-full">
+    <header class="lg:pt-[50vh]  w-full  ">
         <div class="lg:w-1/2 p-8 bg-white">
-        <h1 class="text-7xl">Noriyko Tate</h1>
+        <h1 class="text-7xl lg:text-[124px] font-thin mb-4">Noriyko Tate</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consectetur commodo arcu sed porttitor. Cras vel tincidunt dui. Maecenas quis risus lectus. Proin pharetra lacus ac est congue mattis. Orci varius natoque penatibus et magni.</p>
         </div>
     </header>
     <main>
 
 
-      <div class="space-y-64 mt-64">
+      <div class="space-y-64 bg-white pt-48">
 
 
       <div class="grid lg:grid-cols-2">
-        <div class="order-1 bg-black"></div>
+        <div class="order-1">
+        <img src="assets/philosophy.jpg" class=""/>
+        </div>
         <div class="order-2 p-8">
-      <h2 class="text-3xl">philosophy</h2>
+      <h2 class="text-3xl lg:text-5xl font-bold mb-12">philosophy</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consect.</p>
         <section id="titles"></section> <!-- Section to list the titles -->
 
@@ -33,18 +38,22 @@
       </div>
 
       <div class="grid lg:grid-cols-2">
-        <div class="order-2 bg-black"></div>
-        <div class="order-1 p-8">
-        <h2 class="text-3xl">creativity</h2>
+        <div class="order-1 lg:order-2">
+          <img src="assets/creative2.jpg" class=""/>
+        </div>
+        <div class="order-2 lg:order-1 p-8">
+        <h2 class="text-3xl lg:text-5xl font-bold mb-12">creativity</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consectetur commodo arcu sed porttitor. Cras vel tincidunt dui. Maecenas.</p>
         <section id="links"></section> <!-- Section to list the titles -->
         </div>
       </div>
 
       <div class="grid lg:grid-cols-2">
-        <div class="order-1 bg-black"></div>
+        <div class="order-1">
+            <img src="assets/header.jpg" class=""/>
+        </div>
         <div class="order-2 p-8">
-        <h2 class="text-3xl">contact</h2>
+        <h2 class="text-3xl lg:text-5xl font-bold mb-12">contact</h2>
         <div>formspark</div>
         <section id="links"></section> <!-- Section to list the titles -->
         </div>
@@ -52,7 +61,11 @@
 
 
         <div class="p-8">
-          <h2 class="text-3xl">library</h2>
+          <h2 class="text-3xl lg:text-5xl font-bold mb-12">library</h2>
+          <div class="grid grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-32">
+            <img src="assets/cover.jpg" class=""/>
+            <img src="assets/cover.jpg" class=""/>
+          <img src="assets/cover.jpg" class=""/></div>
 
 
       </div>
