@@ -1,5 +1,5 @@
 ---
-title: Talent
+title: Talent & Recruiting
 date: 2024-08-15 13:18:00 Z
 ---
 
