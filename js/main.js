@@ -3,7 +3,7 @@ const posts = [
     'remote-work.markdown',
     'clarity.markdown',
     'talent.markdown',
-    'power-of-facilitation.markdown'
+    'power-of-facilitation.markdown',
     'open-communication.markdown',
     'conscious-leadership.markdown',
     'creativity-at-work.markdown',
