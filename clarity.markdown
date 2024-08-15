@@ -1,5 +1,5 @@
 ---
-title: 'Clarity: The Cornerstone of High-Performing Tech Teams'
+title: Clarity
 date: 2024-08-15 13:06:00 Z
 ---
 
