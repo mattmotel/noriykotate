@@ -1,5 +1,5 @@
 ---
-title: The Power of Facilitation
+title: Power of Facilitation
 date: 2024-08-15 13:18:00 Z
 ---
 
