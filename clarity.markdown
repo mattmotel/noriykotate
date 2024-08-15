@@ -1,5 +1,5 @@
 ---
-title: Clarity
+title: Creating Clarity
 date: 2024-08-15 13:06:00 Z
 ---
 
