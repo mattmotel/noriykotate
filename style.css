@@ -87,3 +87,16 @@ h1, h2 {
 .custom-button:hover .arrow {
     margin-left: 15px; /* Move arrow slightly to the right on hover */
 }
+
+.animated-image {
+    animation: pulseScale 15s infinite linear;
+}
+
+@keyframes pulseScale {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
