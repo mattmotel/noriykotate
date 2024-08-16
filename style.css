@@ -25,15 +25,19 @@ h1, h2 {
     background: rgba(0, 0, 0, 0.8);
     color: black;
     z-index: 1000;
+    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+    -webkit-backdrop-filter: blur(10px); /* For better support in Safari */
+    transition: background .5s ease, opacity .5s ease;
+    opacity: 1;
 }
 
-#overlay-content {
 
+#overlay-content {
     padding: 2rem;
     max-width: 50%;
     max-height: 100%;
     overflow-y: auto;
-    background: rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, .90);
 }
 
 #overlay-content p{
@@ -41,12 +45,8 @@ h1, h2 {
 }
 
 #close-overlay {
-    margin-top: 20px;
-    display:block
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    background: #3673A6;
+
+
     cursor: pointer;
     position: fixed;
     top: 10px;
@@ -54,5 +54,36 @@ h1, h2 {
 }
 
 #overlay.hidden1 {
-    display: none;
+    opacity: 0;
+    pointer-events: none; /* Prevents interaction when hidden */
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.custom-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #3673A6, #6DA6E2); /* Slight gradient */
+    color: white;
+    border: none;
+    border-radius: 50px; /* Full rounded */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.custom-button .arrow {
+    margin-left: 10px;
+    font-size: 18px;
+    transition: margin-left 0.3s ease;
+}
+
+.custom-button:hover {
+    background: linear-gradient(135deg, #6DA6E2, #3673A6); /* Reverse gradient on hover */
+}
+
+.custom-button:hover .arrow {
+    margin-left: 15px; /* Move arrow slightly to the right on hover */
 }
