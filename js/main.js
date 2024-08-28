@@ -1,59 +1,66 @@
-// List of post files
+// List of posts with corresponding slugs
 const posts = [
-    'remote-work.markdown',
-    'clarity.markdown',
-    'talent.markdown',
-    'power-of-facilitation.markdown',
-    'open-communication.markdown',
-    'conscious-leadership.markdown',
-    'creativity-at-work.markdown',
-
+    { file: 'remote-work.markdown', slug: 'remote-work' },
+    { file: 'clarity.markdown', slug: 'clarity' },
+    { file: 'talent.markdown', slug: 'talent' },
+    { file: 'power-of-facilitation.markdown', slug: 'power-of-facilitation' },
+    { file: 'open-communication.markdown', slug: 'open-communication' },
+    { file: 'conscious-leadership.markdown', slug: 'conscious-leadership' },
+    { file: 'creativity-at-work.markdown', slug: 'creativity-at-work' },
 ];
 
 // Function to load the content of a Markdown file and display it in the overlay
-function loadMarkdownFile(file) {
-    fetch(file)
+function loadMarkdownFile(slug) {
+    const post = posts.find(p => p.slug === slug);
+    if (!post) return;
+
+    fetch(post.file)
         .then(response => response.text())
         .then(text => {
-            // Split front matter from the content
             const content = text.split('---')[2];
             document.getElementById('overlay-content').innerHTML = marked.parse(content);
             document.getElementById('overlay').classList.remove('hidden1');
+            // Update the URL without reloading the page
+            window.history.pushState({ slug }, '', `#${slug}`);
         });
 }
-// Function to load the titles and dates from the front matter
+
+// Function to handle back/forward navigation and initial load
+window.onpopstate = function(event) {
+    const slug = window.location.hash.substring(1);
+    if (slug) {
+        loadMarkdownFile(slug);
+    } else {
+        // Close the overlay if there's no slug in the URL
+        document.getElementById('overlay').classList.add('hidden1');
+    }
+};
+
+// Function to load the titles and set up the links with correct slugs
 function loadTitles() {
     const titlesContainer = document.getElementById('titles');
-    posts.forEach(file => {
-        fetch(file)
+    posts.forEach(post => {
+        fetch(post.file)
             .then(response => response.text())
             .then(text => {
-                // Split the front matter
                 const frontMatter = text.split('---')[1];
-
-                // Extract title from front matter
                 const title = frontMatter.match(/title:\s*(.*)/)[1].trim();
 
                 // Create the icon wrapper element
                 const iconWrapper = document.createElement('span');
                 iconWrapper.classList.add('icon-wrapper');
 
-
                 // Create the first image element (the one that will move left on hover)
                 const imgElement1 = document.createElement('img');
-                imgElement1.src = 'assets/arrow-right.svg'; // Update with the correct path
+                imgElement1.src = 'assets/arrow-right.svg';
                 imgElement1.alt = 'Arrow Right';
-                imgElement1.classList.add('icon'); // Class for animation
+                imgElement1.classList.add('icon');
 
-                // Create the second image element (the one that will move in from the right on hover)
-                const imgElement2 = document.createElement('img');
-                imgElement2.src = 'assets/arrow-right.svg'; // Update with the correct path
-                imgElement2.alt = 'Arrow Right';
-                imgElement2.classList.add('icon'); // Class for animation
+
 
                 // Add both images to the icon wrapper
                 iconWrapper.appendChild(imgElement1);
-                iconWrapper.appendChild(imgElement2);
+
 
                 // Create the title element as a link
                 const titleElement = document.createElement('a');
@@ -63,15 +70,17 @@ function loadTitles() {
                 // Create the container for the entire link
                 const containerElement = document.createElement('a');
                 containerElement.classList.add('arrow-link', 'flex', 'w-full', 'py-2');
-
-                containerElement.href = "#"; // Add the correct link here
+                containerElement.href = `#${post.slug}`;
 
                 // Append iconWrapper and titleElement to the container
                 containerElement.appendChild(iconWrapper);
                 containerElement.appendChild(titleElement);
 
                 // Set the onclick event for the title element
-                containerElement.onclick = () => loadMarkdownFile(file);
+                containerElement.onclick = (e) => {
+                    e.preventDefault(); // Prevent default link behavior
+                    loadMarkdownFile(post.slug);
+                };
 
                 // Append the container to the titles container
                 titlesContainer.appendChild(containerElement);
@@ -80,15 +89,21 @@ function loadTitles() {
     });
 }
 
-
-
 // Close overlay functionality
 document.getElementById('close-overlay').addEventListener('click', function() {
     document.getElementById('overlay').classList.add('hidden1');
+    // Clear the URL hash
+    window.history.pushState({}, '', window.location.pathname);
 });
 
 // Initial load of titles
 loadTitles();
+
+// Check if there's a slug in the URL on page load
+const initialSlug = window.location.hash.substring(1);
+if (initialSlug) {
+    loadMarkdownFile(initialSlug);
+}
 
 
 window.addEventListener('scroll', function() {

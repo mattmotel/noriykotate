@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     color: #5C5C5C;
@@ -46,7 +50,6 @@ h1, h2, .text-blue-primary {
 
 #close-overlay {
 
-
     cursor: pointer;
     position: fixed;
     top: 10px;
@@ -64,29 +67,22 @@ h1, h2, .text-blue-primary {
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
-    background: linear-gradient(135deg, #3673A6, #6DA6E2); /* Slight gradient */
+    background: linear-gradient(135deg, #3673A6, #6DA6E2);
     color: white;
     border: none;
-    border-radius: 50px; /* Full rounded */
+    border-radius: 50px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.custom-button .arrow {
-    margin-left: 10px;
-    font-size: 18px;
-    transition: margin-left 0.3s ease;
+    transition: transform 0.3s ease, background-size 0.3s ease;
+    background-size: 100% 100%; /* Start with the gradient fully covering the button */
 }
 
 .custom-button:hover {
-    background: linear-gradient(135deg, #6DA6E2, #3673A6); /* Reverse gradient on hover */
+    transform: scale(1.02); /* Slightly scale the entire button */
+    background-size: 150% 150%; /* Increase the background size for a subtle gradient effect */
 }
 
-.custom-button:hover .arrow {
-    margin-left: 15px; /* Move arrow slightly to the right on hover */
-}
 
 .animated-image {
     animation: pulseScale 15s infinite linear;
@@ -120,25 +116,16 @@ h1, h2, .text-blue-primary {
     transition: transform 0.75s ease;
 }
 
-.arrow-link .icon-wrapper .icon:first-child {
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: transform 0.75s ease;
-}
 
-.arrow-link .icon-wrapper .icon:last-child {
-    transform: translateX(35px);
-    opacity: 0;
+
+.arrow-link .icon-wrapper .icon{
+
+
     transition: transform 0.75s ease, opacity 0.75s ease;
 }
 
-.arrow-link:hover .icon-wrapper .icon:first-child {
-    transform: translateX(-35px);
-    opacity: 0;
-}
 
-.arrow-link:hover .icon-wrapper .icon:last-child {
+.arrow-link:hover .icon-wrapper .icon {
     transform: translateX(0);
     opacity: 1;
 }
