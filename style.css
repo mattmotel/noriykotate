@@ -81,6 +81,7 @@ h1, h2, .text-blue-primary {
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
+    background-color: #fff;
     border: 1px solid #6DA6E2;
     color: #3673A6;
     border-radius: 50px;
