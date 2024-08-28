@@ -9,6 +9,23 @@ const posts = [
     { file: 'creativity-at-work.markdown', slug: 'creativity-at-work' },
 ];
 
+// Function to update the meta title and description
+function updateMetaData(title) {
+    // Update the document title
+    document.title = `${title} - Noriyko Tate`;
+
+    // Update the meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+        metaDescription.setAttribute('content', `${title} - I transform remote and hybrid workplaces into thriving ecosystems of innovation, clarity, and open communication, catalyzing startup success through human-centric people operations.`);
+    } else {
+        const meta = document.createElement('meta');
+        meta.name = "description";
+        meta.content = `${title} - Noriyko Tate`;
+        document.head.appendChild(meta);
+    }
+}
+
 // Function to load the content of a Markdown file and display it in the overlay
 function loadMarkdownFile(slug) {
     const post = posts.find(p => p.slug === slug);
@@ -17,12 +34,20 @@ function loadMarkdownFile(slug) {
     fetch(post.file)
         .then(response => response.text())
         .then(text => {
+            const frontMatter = text.split('---')[1];
+            const title = frontMatter.match(/title:\s*(.*)/)[1].trim();
             const content = text.split('---')[2];
+
             document.getElementById('overlay-content').innerHTML = marked.parse(content);
             document.getElementById('overlay').classList.remove('hidden1');
+
             // Update the URL without reloading the page
             window.history.pushState({ slug }, '', `#${slug}`);
-        });
+
+            // Update meta tags
+            updateMetaData(title);
+        })
+        .catch(error => console.error('Error loading post:', error));
 }
 
 // Function to handle back/forward navigation and initial load
@@ -33,6 +58,8 @@ window.onpopstate = function(event) {
     } else {
         // Close the overlay if there's no slug in the URL
         document.getElementById('overlay').classList.add('hidden1');
+        // Optionally reset to the default meta data
+        updateMetaData('Noriyko Tate');
     }
 };
 
@@ -56,11 +83,8 @@ function loadTitles() {
                 imgElement1.alt = 'Arrow Right';
                 imgElement1.classList.add('icon');
 
-
-
-                // Add both images to the icon wrapper
+                // Add the image to the icon wrapper
                 iconWrapper.appendChild(imgElement1);
-
 
                 // Create the title element as a link
                 const titleElement = document.createElement('a');
@@ -94,6 +118,8 @@ document.getElementById('close-overlay').addEventListener('click', function() {
     document.getElementById('overlay').classList.add('hidden1');
     // Clear the URL hash
     window.history.pushState({}, '', window.location.pathname);
+    // Optionally reset to the default meta data
+    updateMetaData('Noriyko Tate');
 });
 
 // Initial load of titles
@@ -104,7 +130,6 @@ const initialSlug = window.location.hash.substring(1);
 if (initialSlug) {
     loadMarkdownFile(initialSlug);
 }
-
 
 window.addEventListener('scroll', function() {
     const stickyMenu = document.getElementById('sticky-menu');
