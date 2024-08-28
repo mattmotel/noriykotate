@@ -33,15 +33,26 @@ h1, h2, .text-blue-primary {
     -webkit-backdrop-filter: blur(10px); /* For better support in Safari */
     transition: background .5s ease, opacity .5s ease;
     opacity: 1;
+    overflow: hidden; /* Prevent scrolling on the overlay itself */
 }
 
-
 #overlay-content {
-    padding: 2rem;
-    max-width: 50%;
+    padding: 3rem;
+    width: 50%;
     max-height: 100%;
-    overflow-y: auto;
+    overflow-y: auto; /* Scrollable content area */
     background: rgba(255, 255, 255, .90);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+/* Full width on mobile */
+@media (max-width: 1024px) {
+    #overlay-content {
+        width: 100%;
+    }
 }
 
 #overlay-content h1{
