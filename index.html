@@ -1,169 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noriyko Tate</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noriyko Tate</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="">
-  <img src="assets/header.jpg" class="animated-image fixed top-0 left-0 w-full h-[40vh] lg:h-[100vh] object-cover z-[-1]"/>
+
+  <div id="sticky-menu" class="fixed top-0 left-0 w-full px-4 py-2 hidden opacity-0 transform -translate-y-4 transition-all duration-500 backdrop-blur-lg">
+      <div class="flex justify-between items-center">
+          <span class="text-blue-primary text-3xl font-light">Noriyko Tate</span>
+          <a href="#contact" class="text-sm font-semibold text-gray-700 bg-gray-100/70 hover:bg-white/90 py-2 px-4 rounded-full transition-all">
+              Connect
+          </a>
+      </div>
+  </div>
+
+
+
+
+
+  <img src="assets/header.jpg" class="animated-image fixed top-0 left-0 w-full h-[40vh] lg:h-[100vh] object-cover z-[-1]" />
 
   <header class="relative pt-[40vh] lg:pt-[53vh] w-full z-10">
-      <div class="lg:w-1/2 p-8 bg-white">
-          <h1 class="text-7xl lg:text-[124px] font-thin mb-4">Noriyko<br/>Tate</h1>
-          <p>
-              I transform <b>remote and hybrid workplaces</b> into thriving ecosystems of innovation, clarity, and open communication, catalyzing startup success through human-centric <b>people operations</b>.
-          </p>
-      </div>
+    <div class="lg:w-1/2 p-8 bg-white">
+      <h1 class="text-7xl lg:text-[124px] font-thin mb-4">Noriyko<br />Tate</h1>
+      <p>
+        I transform <b>remote and hybrid workplaces</b> into thriving ecosystems of innovation, clarity, and open communication, catalyzing startup success through human-centric <b>people operations</b>.
+      </p>
+    </div>
   </header>
 
-    <main>
+  <main>
 
 
-      <div class="space-y-16 lg:space-y-64 bg-white pt-24 lg:pt-48">
+    <div class="space-y-16 lg:space-y-64 bg-white pt-24 lg:pt-48">
 
 
       <div class="grid lg:grid-cols-2">
         <div class="order-2 lg:order-1">
-        <img src="assets/philosophy.jpg" class=""/>
+          <img src="assets/philosophy.jpg" class="" />
         </div>
         <div class="order-1 lg:order-2 p-8">
-      <h2 class="text-3xl lg:text-5xl font-bold mb-12">perspective</h2>
-      <p>Insights and strategies for building thriving remote and hybrid teams in today’s startup landscape</p>
-        <section id="titles" class="pt-4"></section> <!-- Section to list the titles -->
+          <h2 class="text-3xl lg:text-5xl font-bold mb-12">perspective</h2>
+          <p>Insights and strategies for building thriving remote and hybrid teams in today’s startup landscape</p>
+          <section id="titles" class="pt-4"></section> <!-- Section to list the titles -->
 
         </div>
       </div>
+
+
+
+
 
       <div class="grid lg:grid-cols-2">
         <div class="order-2">
-          <img src="assets/creative.jpg" class=""/>
+          <img src="assets/creative.jpg" class="" />
         </div>
         <div class="order-1 p-8">
-        <h2 class="text-3xl lg:text-5xl font-bold mb-12">originality</h2>
-        <p>Orchestrating startup success through people-first strategies and nurturing creative storytelling passions
-</p>
-        <section id="links"></section> <!-- Section to list the titles -->
-        <div class="space-y-2 mt-4">
-          <!-- Card 1 -->
-          <a href="http://iamnotjapanese.com/" class="flex items-center p-4 border border-gray-300 rounded-lg hover:bg-gray-50">
-            <img src="assets/ianj.png" alt="I Am Not Japanese" class="w-8 h-8 mr-4 rounded-md">
-            <span class="text-gray-700 hover:text-gray-500 font-semibold">I Am Not Japanese</span>
-          </a>
+          <h2 class="text-3xl lg:text-5xl font-bold mb-12">originality</h2>
+          <p>Orchestrating startup success through people-first strategies and nurturing creative storytelling passions
+          </p>
+          <section id="links"></section> <!-- Section to list the titles -->
+          <div class="space-y-2 mt-4">
+            <!-- Card 1 -->
+            <a href="http://iamnotjapanese.com/" class="flex items-center p-4 border border-gray-300 rounded-lg hover:bg-gray-50">
+              <img src="assets/ianj.png" alt="I Am Not Japanese" class="w-8 h-8 mr-4 rounded-md">
+              <span class="text-gray-700 hover:text-gray-500 font-semibold">I Am Not Japanese</span>
+            </a>
 
-          <!-- Card 2 -->
-          <a href="#" class="flex items-center p-4 border border-gray-300 rounded-lg hover:bg-gray-50">
-            <img src="assets/falls.png" alt="I Am Not Japanese" class="w-8 h-8 mr-4 rounded-md">
-            <span class="text-gray-700 hover:text-gray-500 font-semibold">
-              34 Lackawanna Falls
-              <!-- Coming Soon Overlay -->
-              <span class="text-sm text-gray-500 font-bold">(Coming Soon)</span>
-            </span>
-          </a>
+            <!-- Card 2 -->
+            <a href="#" class="flex items-center p-4 border border-gray-300 rounded-lg hover:bg-gray-50">
+              <img src="assets/falls.png" alt="I Am Not Japanese" class="w-8 h-8 mr-4 rounded-md">
+              <span class="text-gray-700 hover:text-gray-500 font-semibold">
+                34 Lackawanna Falls
+                <!-- Coming Soon Overlay -->
+                <span class="text-sm text-gray-500 font-bold">(Coming Soon)</span>
+              </span>
+            </a>
 
-          <!-- Card 3 -->
-          <a href="#" class="flex items-center p-4 border border-gray-300 rounded-lg hover:bg-gray-50">
-          <img src="assets/cambridge.png" alt="I Am Not Japanese" class="w-8 h-8 mr-4 rounded-md">
-            <span class="text-gray-700 hover:text-gray-500 font-semibold">
-              Cambridge
-              <!-- Coming Soon Overlay -->
-              <span class="text-sm text-gray-500 font-bold">(Coming Soon)</span>
-            </span>
-          </a>
+            <!-- Card 3 -->
+            <a href="#" class="flex items-center p-4 border border-gray-300 rounded-lg hover:bg-gray-50">
+              <img src="assets/cambridge.png" alt="I Am Not Japanese" class="w-8 h-8 mr-4 rounded-md">
+              <span class="text-gray-700 hover:text-gray-500 font-semibold">
+                Cambridge
+                <!-- Coming Soon Overlay -->
+                <span class="text-sm text-gray-500 font-bold">(Coming Soon)</span>
+              </span>
+            </a>
 
 
-        </div>
+          </div>
 
         </div>
       </div>
 
       <div class="grid lg:grid-cols-2">
-      <div class="order-1 lg:order-2 p-8">
-        <h2 class="text-3xl lg:text-5xl font-bold mb-12">wisdom</h2>
-        <p>Curated reads to fuel your professional journey and expand your leadership horizons</p>
+        <div class="order-1 lg:order-2 p-8">
+          <h2 class="text-3xl lg:text-5xl font-bold mb-12">wisdom</h2>
+          <p>Curated reads to fuel your professional journey and expand your leadership horizons</p>
         </div>
         <div class="order-2 lg:order-1 flex lg:grid lg:grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4 p-8 overflow-scroll">
-          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg w-1/2 lg:w-full"/>
-          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg w-1/2 lg:w-full"/>
-          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg w-1/2 lg:w-full"/>
-          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg w-1/2 lg:w-full"/>
-          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg w-1/2 lg:w-full"/>
-          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg w-1/2 lg:w-full"/>
-          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg w-1/2 lg:w-full"/>
-          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg w-1/2 lg:w-full"/>
+          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg w-1/2 lg:w-full" />
+          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg w-1/2 lg:w-full" />
+          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg w-1/2 lg:w-full" />
+          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg w-1/2 lg:w-full" />
+          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg w-1/2 lg:w-full" />
+          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg w-1/2 lg:w-full" />
+          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg w-1/2 lg:w-full" />
+          <img src="assets/cover.jpg" class="bg-gray-100 p-2 rounded-lg w-1/2 lg:w-full" />
         </div>
       </div>
 
       <div class="grid lg:grid-cols-2">
         <div class="order-2 p-8 bg-gray-100">
           <p>Let's connect to elevate your team's potential and craft a transformative people strategy tailored to your organization's unique challenges
-</p>
+          </p>
 
-        <form action="https://submit-form.com/Og1dzKJGV" class="space-y-6">
-          <div>
-            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Name"
-              required
-              class="w-full border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none py-2"
-            />
-          </div>
+          <form action="https://submit-form.com/Og1dzKJGV" class="space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+              <input type="text" id="name" name="name" placeholder="Name" required class="w-full border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none py-2" />
+            </div>
 
-          <div>
-            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email"
-              required
-              class="w-full border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none py-2"
-            />
-          </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+              <input type="email" id="email" name="email" placeholder="Email" required class="w-full border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none py-2" />
+            </div>
 
-          <div>
-            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Message"
-              required
-              class="w-full border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none py-2 lg:h-24"
-            ></textarea>
-          </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+              <textarea id="message" name="message" placeholder="Message" required class="w-full border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none py-2 lg:h-24"></textarea>
+            </div>
 
-          <div>
-            <button
-              type="submit"
-              class="custom-button"
-            >
-              Send
-            </button>
-          </div>
-        </form>
+            <div>
+              <button type="submit" class="custom-button">
+                Send
+              </button>
+            </div>
+          </form>
 
         </div>
         <div class="order-1 p-8" id="contact">
-            <h2 class="text-3xl lg:text-5xl font-bold mb-12">connect</h2>
-            <div class="space-y-4">
-            <p>  As a seasoned Head of People & Culture with a track record in scaling startups to billion-dollar valuations, I architect human-centric operations that drive innovation and foster elite team performance. By implementing strategic people operations and championing open communication, I transform distributed and hybrid teams into high-performing units capable of navigating rapid growth and scale.
-</p>
-            </div>
-            <div class="space-y-2 pt-4">
-                <a href="https://www.linkedin.com/in/noriykotate/" target="_blank" class="text-gray-700 hover:text-gray-500 underline font-semibold">
-                  <img src="assets/linkedin.svg"/>  LinkedIn
-                </a>
-                <br>
-                <a href="https://noriykotate.medium.com" target="_blank" class="text-gray-700 hover:text-gray-500  underline font-semibold">
-                  <img src="assets/medium.svg"/>  Medium
-                </a>
-            </div>
+          <h2 class="text-3xl lg:text-5xl font-bold mb-12">connect</h2>
+          <div class="space-y-4">
+            <p> As a seasoned Head of People & Culture with a track record in scaling startups to billion-dollar valuations, I architect human-centric operations that drive innovation and foster elite team performance. By implementing strategic
+              people operations and championing open communication, I transform distributed and hybrid teams into high-performing units capable of navigating rapid growth and scale.
+            </p>
+          </div>
+          <div class="space-y-2 pt-4">
+            <a href="https://www.linkedin.com/in/noriykotate/" target="_blank" class="arrow-link">
+              <span class="icon-wrapper">
+                <img src="assets/linkedin.svg" alt="LinkedIn" class="icon">
+                <img src="assets/linkedin.svg" alt="LinkedIn" class="icon">
+              </span>
+              <span class="link-text">LinkedIn</span>
+            </a>
+            <br>
+            <a href="https://noriykotate.medium.com" target="_blank" class="arrow-link">
+              <span class="icon-wrapper">
+                <img src="assets/medium.svg" alt="Medium" class="icon">
+                <img src="assets/medium.svg" alt="Medium" class="icon">
+              </span>
+              <span class="link-text">Medium</span>
+            </a>
+
+          </div>
 
 
         </div>
@@ -173,20 +180,21 @@
 
 
 
-      </div>
-
-
-
-
-    </main>
-
-    <!-- Overlay for displaying post content -->
-    <div id="overlay" class="hidden1">
-        <div id="overlay-content"></div>
-        <button id="close-overlay" class="custom-button">Close</button>
     </div>
 
-    <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+
+
+  </main>
+
+  <!-- Overlay for displaying post content -->
+  <div id="overlay" class="hidden1">
+    <div id="overlay-content"></div>
+    <button id="close-overlay" class="custom-button">Close</button>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </body>
+
 </html>

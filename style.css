@@ -8,7 +8,7 @@ body {
   background-image: url("assets/header.jpg");
 }
 
-h1, h2 {
+h1, h2, .text-blue-primary {
   color: #3673A6;
 }
 .bg-primary-blue{
@@ -100,3 +100,63 @@ h1, h2 {
         transform: scale(1.05);
     }
 }
+
+
+
+.arrow-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #3673A6;
+    font-size: 16px;
+    transition: color 0.6s ease;
+}
+
+.arrow-link .icon-wrapper {
+    display: inline-flex;
+    position: relative;
+    margin-right: 8px;
+    transition: transform 0.75s ease;
+}
+
+.arrow-link .icon-wrapper .icon:first-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: transform 0.75s ease;
+}
+
+.arrow-link .icon-wrapper .icon:last-child {
+    transform: translateX(35px);
+    opacity: 0;
+    transition: transform 0.75s ease, opacity 0.75s ease;
+}
+
+.arrow-link:hover .icon-wrapper .icon:first-child {
+    transform: translateX(-35px);
+    opacity: 0;
+}
+
+.arrow-link:hover .icon-wrapper .icon:last-child {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.arrow-link:hover {
+    color: #508BC7;
+}
+
+.link-text {
+    position: relative;
+    transition: margin 0.3s ease;
+}
+
+.arrow-link:hover .link-text {
+    margin-left: 0.25rem;
+}
+
+
+#sticky-menu {
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  }
