@@ -3,7 +3,7 @@ title: Talent & Recruiting
 date: 2024-08-15 13:18:00 Z
 ---
 
-**Talent & Recruiting for Remote Startup Teams: Building Your Dream Team**
+# Talent & Recruiting for Remote Startup Teams: Building Your Dream Team
 
 As a Head of People & Culture specializing in remote and hybrid teams, I have learned that startups need three key ingredients for success: enough capital, great product/tech, and key talent. My job? To help you attract and retain the best people for your remote startup. Let's dive into how we can make that happen.
 
@@ -69,25 +69,3 @@ We are focused on creating sustainable practices for people to grow and go the l
 In the end, building a dream team for your remote startup is about more than just filling positions. It's about creating a culture where people feel valued, challenged, and connected—no matter where they're logging in from. By focusing on these aspects, we can build a talent pipeline that will fuel your startup's growth for years to come.
 
 Remember, in the world of remote startups, your people are your greatest asset. Let's treat them that way\!
-
-\===  
-Tags:  
-Remote Work  
-Startup  
-Culture  
-People  
-Talent  
-Recruiting  
-Communication  
-Clarity  
-Leadership  
-People Ops  
-Operations  
-Startup Lessons  
-Head of People  
-Remote Work Tips  
-Remote Work Tools
-
-Image:
-
-Social Media Header:  

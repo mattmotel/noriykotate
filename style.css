@@ -44,6 +44,9 @@ h1, h2, .text-blue-primary {
     background: rgba(255, 255, 255, .90);
 }
 
+#overlay-content h1{
+  font-size: 24px;
+}
 #overlay-content p{
   margin:1rem 0;
 }
@@ -67,20 +70,20 @@ h1, h2, .text-blue-primary {
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
-    background: linear-gradient(135deg, #3673A6, #6DA6E2);
-    color: white;
-    border: none;
+    border: 1px solid #6DA6E2;
+    color: #3673A6;
     border-radius: 50px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     transition: transform 0.3s ease, background-size 0.3s ease;
-    background-size: 100% 100%; /* Start with the gradient fully covering the button */
+
 }
 
 .custom-button:hover {
     transform: scale(1.02); /* Slightly scale the entire button */
-    background-size: 150% 150%; /* Increase the background size for a subtle gradient effect */
+    border: 1px solid #3673A6;
+
 }
 
 
