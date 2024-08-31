@@ -87,22 +87,27 @@ function loadTitles() {
                 iconWrapper.appendChild(imgElement1);
 
                 // Create the title element as a link
-                const titleElement = document.createElement('a');
+                const titleElement = document.createElement('span');
                 titleElement.textContent = title;
                 titleElement.classList.add('underline', 'block', 'link-text');
 
                 // Create the container for the entire link
                 const containerElement = document.createElement('a');
                 containerElement.classList.add('arrow-link', 'flex', 'w-full', 'py-2');
-                containerElement.href = `#${post.slug}`;
+                containerElement.href = `/#${post.slug}`; // Use the base URL with the anchor link
 
                 // Append iconWrapper and titleElement to the container
                 containerElement.appendChild(iconWrapper);
                 containerElement.appendChild(titleElement);
 
-                // Set the onclick event for the title element
+                // Set the onclick event for the container element
                 containerElement.onclick = (e) => {
                     e.preventDefault(); // Prevent default link behavior
+
+                    // Update the URL without reloading the page
+                    history.pushState(null, null, `/#${post.slug}`);
+
+                    // Load the content dynamically
                     loadMarkdownFile(post.slug);
                 };
 
@@ -112,6 +117,7 @@ function loadTitles() {
             .catch(error => console.error('Error loading post:', error));
     });
 }
+
 
 // Close overlay functionality
 document.getElementById('close-overlay').addEventListener('click', function() {
