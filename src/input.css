@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #5C5C5C;
+    font-weight: 400;
+}
+
+.header-bg{
+  background-image: url("assets/header.jpg");
+}
+
+h1, h2, .text-blue-primary {
+  color: #3673A6;
+}
+.bg-primary-blue{
+  background-color: #3673A6;
+}
+
+/* Overlay Styles */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: black;
+    z-index: 1000;
+    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+    -webkit-backdrop-filter: blur(10px); /* For better support in Safari */
+    transition: background .5s ease, opacity .5s ease;
+    opacity: 1;
+    overflow: hidden; /* Prevent scrolling on the overlay itself */
+}
+
+#overlay-content {
+    padding: 3rem;
+    width: 50%;
+    max-height: 100%;
+    overflow-y: auto; /* Scrollable content area */
+    background: rgba(255, 255, 255, .90);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+/* Full width on mobile */
+@media (max-width: 1024px) {
+    #overlay-content {
+        width: 100%;
+    }
+}
+
+#overlay-content h1{
+  font-size: 24px;
+}
+#overlay-content p{
+  margin:1rem 0;
+}
+
+#close-overlay {
+
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+#overlay.hidden1 {
+    opacity: 0;
+    pointer-events: none; /* Prevents interaction when hidden */
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.custom-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #6DA6E2;
+    color: #3673A6;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-size 0.3s ease;
+
+}
+
+.custom-button:hover {
+    transform: scale(1.02); /* Slightly scale the entire button */
+    border: 1px solid #3673A6;
+
+}
+
+
+.animated-image {
+    animation: pulseScale 15s infinite linear;
+}
+
+@keyframes pulseScale {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+
+
+.arrow-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #3673A6;
+    font-size: 16px;
+    transition: color 0.6s ease;
+}
+
+.arrow-link .icon-wrapper {
+    display: inline-flex;
+    position: relative;
+    margin-right: 8px;
+    transition: transform 0.75s ease;
+}
+
+
+
+.arrow-link .icon-wrapper .icon{
+
+
+    transition: transform 0.75s ease, opacity 0.75s ease;
+}
+
+
+.arrow-link:hover .icon-wrapper .icon {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.arrow-link:hover {
+    color: #508BC7;
+}
+
+.link-text {
+    position: relative;
+    transition: margin 0.3s ease;
+}
+
+.arrow-link:hover .link-text {
+    margin-left: 0.25rem;
+}
+
+
+#sticky-menu {
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  }
