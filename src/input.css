@@ -81,6 +81,14 @@ h1, h2, .text-blue-primary {
   margin-bottom: 0.5rem; /* Space between list items */
   line-height: 1.5; /* Adjust for better readability */
 }
+#overlay-content a {
+  color: #3673A6;
+  text-decoration: underline;
+}
+
+#overlay-content a:hover {
+  text-decoration: none; /* Optional: remove underline on hover */
+}
 
 
 #close-overlay {
