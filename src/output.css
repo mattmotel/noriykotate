@@ -898,6 +898,29 @@ h1, h2, .text-blue-primary {
   margin:1rem 0;
 }
 
+#overlay-content ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  /* Indent for better readability */
+  margin: 1rem 0;
+  /* Similar margin to p for consistent spacing */
+}
+
+#overlay-content ul ul {
+  /* Nested ul styling */
+  list-style-type: circle;
+  /* Change bullet style for nested lists */
+  margin-left: 1rem;
+  /* Extra indent for nested lists */
+}
+
+#overlay-content li {
+  margin-bottom: 0.5rem;
+  /* Space between list items */
+  line-height: 1.5;
+  /* Adjust for better readability */
+}
+
 #close-overlay {
   cursor: pointer;
   position: fixed;
