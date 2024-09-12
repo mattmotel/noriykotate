@@ -761,6 +761,10 @@ video {
   padding-top: 40vh;
 }
 
+.pt-8 {
+  padding-top: 2rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
