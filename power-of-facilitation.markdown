@@ -23,7 +23,7 @@ Consider this: so many startups fail not because of product issues or market con
 *Key principles for startup success*
 
 In a remote setting, honesty is not just the best policy; it is the only policy that works. Encourage team members to bring their whole selves to virtual meetings, candor and all. It is about creating a space where people feel safe to speak up, even when their video is off. Here are a few guiding principles for maximizing team transparency and performance:\
-1\. **Honesty and Radical Candor**  [https://www.radicalcandor.com/](https://www.radicalcandor.com/) - Bring truth to every meeting, even when it's uncomfortable\
+1\. **Honesty and [Radical Candor](https://www.radicalcandor.com/)** - Bring truth to every meeting, even when it's uncomfortable\
 2\. **Active Listening** - Understand perspectives before attempting to reconcile them\
 3\. **Call Out Nonsense** - Do not allow egos or personal agendas derail progress\
 4\. **Company-First Mindset** - Always prioritize what is best for the product and company, not personal preferences\
