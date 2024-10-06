@@ -54,15 +54,16 @@ Clear communication is the lifeblood of any remote team, and this is where the p
 
 * A wholehearted "yes" from everyone involved
 
-Here is the real game-changer: it is not about never breaking agreements (we are human, after all). It is about how we handle it when we do. Renegotiating proactively and cleaning up broken agreements with integrity can actually build more trust than never breaking them at all.
+Here is the real game-changer: it is not about never breaking agreements (we are human, after all). It is about how we handle it when we do. Renegotiating proactively and cleaning up broken agreements with integrity can actually build more trust than never breaking them at all.\
+
 
 Implementing impeccable agreements:
 
-1. Use a shared project management tool to document all agreements
+* Use a shared project management tool to document all agreements
 
-2. Set up a system for proactive renegotiation
+* Set up a system for proactive renegotiation
 
-3. Celebrate when team members clean up broken agreements effectively1. 
+* Celebrate when team members clean up broken agreements effectively1. 
 
 **Developing a Practices**\
 *Transforming interpersonal challenges into startup success stories*\
