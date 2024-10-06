@@ -5,7 +5,7 @@ date: 2024-08-15 13:19:00 Z
 
 # Conscious Leadership: The Catalyst for Remote Startup Excellence
 
-As a Head of People & Culture who has navigated the choppy waters of remote startup life, I have discovered a game-changing approach that is transforming how we work: Conscious Leadership. It is not just another management fad but rather a powerful toolkit that can supercharge your remote team's performance and drive venture capital returns. I want to share how these ideas can transform your remote team dynamics and boost productivity.
+As a Head of People & Culture who has navigated the choppy waters of remote startup life, I have discovered a game-changing approach that is transforming how we work: [Conscious Leadership](https://conscious.is/). It is not just another management fad but rather a powerful toolkit that can supercharge your remote team's performance and drive venture capital returns. I want to share how these ideas can transform your remote team dynamics and boost productivity.
 
 **The Power of Alignment**\
 *Alignment is more than just shared calendars*
@@ -56,14 +56,13 @@ Clear communication is the lifeblood of any remote team, and this is where the p
 
 Here is the real game-changer: it is not about never breaking agreements (we are human, after all). It is about how we handle it when we do. Renegotiating proactively and cleaning up broken agreements with integrity can actually build more trust than never breaking them at all.
 
-
 Implementing impeccable agreements:
 
 * Use a shared project management tool to document all agreements
 
 * Set up a system for proactive renegotiation
 
-* Celebrate when team members clean up broken agreements effectively 
+* Celebrate when team members clean up broken agreements effectively
 
 **Developing a Practices**\
 *Transforming interpersonal challenges into startup success stories*\
