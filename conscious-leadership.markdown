@@ -63,7 +63,7 @@ Implementing impeccable agreements:
 
 * Set up a system for proactive renegotiation
 
-* Celebrate when team members clean up broken agreements effectively1. 
+* Celebrate when team members clean up broken agreements effectively 
 
 **Developing a Practices**\
 *Transforming interpersonal challenges into startup success stories*\
