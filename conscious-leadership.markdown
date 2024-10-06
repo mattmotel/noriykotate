@@ -54,7 +54,7 @@ Clear communication is the lifeblood of any remote team, and this is where the p
 
 * A wholehearted "yes" from everyone involved
 
-Here is the real game-changer: it is not about never breaking agreements (we are human, after all). It is about how we handle it when we do. Renegotiating proactively and cleaning up broken agreements with integrity can actually build more trust than never breaking them at all.\
+Here is the real game-changer: it is not about never breaking agreements (we are human, after all). It is about how we handle it when we do. Renegotiating proactively and cleaning up broken agreements with integrity can actually build more trust than never breaking them at all.
 
 
 Implementing impeccable agreements:
